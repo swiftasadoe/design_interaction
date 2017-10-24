@@ -7,7 +7,7 @@ var moo;
 var quack;
 var elephunk; 
 var quicksand;
-var yourcanvas;
+
 
 var img1 = {
  loc: 0,
@@ -76,8 +76,7 @@ function preload(){
 }
 
 function setup(){
-    yourcanvas = createCanvas(windowWidth,windowHeight);
-    canvas.postition(0,0);
+   createCanvas(windowWidth,windowHeight);
     textFont(quicksand);
     //img1.loc = loadGif("reference/cow.gif");
     //img2.loc = loadGif("reference/duck.gif");
