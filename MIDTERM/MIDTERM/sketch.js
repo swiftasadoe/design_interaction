@@ -80,10 +80,10 @@ function setup(){
 function draw(){
     background(102,153,0);
     
-    image(img1.loc, 50,50);
-    image(img2.loc, 50,570);
-    image(img3.loc, 600,50);
-    image(img4.loc, 600,350);
+    image(img1.loc, img1.x, img1.y);
+    image(img2.loc, img2.x, img2.y);
+    image(img3.loc, img3.x, img3.y);
+    image(img4.loc, img4.x ,img4.y);
    
     textSize(70);
     fill(255,204,0);
