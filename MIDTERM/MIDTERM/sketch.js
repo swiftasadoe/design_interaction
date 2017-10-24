@@ -14,6 +14,8 @@ var img1 = {
  y: 50, 
  left: 0, 
  right: 0, 
+ width: 500, 
+ height: 503,
  top: 0, 
  bottom: 0    
 }
@@ -23,7 +25,9 @@ var img2 = {
  x: 50, 
  y: 570, 
  left: 0, 
- right: 0, 
+ right: 0,
+ width:374,
+ height:204,
  top: 0, 
  bottom: 0    
 }
@@ -33,7 +37,9 @@ var img3 = {
  x: 600, 
  y: 50, 
  left: 0, 
- right: 0, 
+ right: 0,
+ width:500,
+ height:261,
  top: 0, 
  bottom: 0    
 }
@@ -43,7 +49,9 @@ var img4 = {
  x: 600, 
  y: 350, 
  left: 0, 
- right: 0, 
+ right: 0,
+ width:500,
+ height:345,
  top: 0, 
  bottom: 0    
 }
