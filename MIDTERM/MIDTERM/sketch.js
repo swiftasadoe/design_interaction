@@ -79,10 +79,10 @@ function setup(){
     yourcanvas = createCanvas(windowWidth,windowHeight);
     canvas.postition(0,0);
     textFont(quicksand);
-    img1.loc = loadGif("reference/cow.gif");
-    img2.loc = loadGif("reference/duck.gif");
-    img3.loc = loadGif("reference/elephant.gif");
-    img4.loc = loadGif("reference/lion.gif");
+    //img1.loc = loadGif("reference/cow.gif");
+    //img2.loc = loadGif("reference/duck.gif");
+    //img3.loc = loadGif("reference/elephant.gif");
+    //img4.loc = loadGif("reference/lion.gif");
     
 
 }
@@ -90,10 +90,10 @@ function setup(){
 function draw(){
     background(102,153,0);
     
-    image(img1.loc, img1.x, img1.y);
-    image(img2.loc, img2.x, img2.y);
-    image(img3.loc, img3.x, img3.y);
-    image(img4.loc, img4.x ,img4.y);
+    //image(img1.loc, img1.x, img1.y);
+    //image(img2.loc, img2.x, img2.y);
+    //image(img3.loc, img3.x, img3.y);
+    //image(img4.loc, img4.x ,img4.y);
  
  fill(30,30,30);
  
