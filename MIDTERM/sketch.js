@@ -14,6 +14,8 @@ var img1 = {
  y: 50, 
  left: 0, 
  right: 0, 
+ width: 500, 
+ height: 503,
  top: 0, 
  bottom: 0    
 }
@@ -23,7 +25,9 @@ var img2 = {
  x: 50, 
  y: 570, 
  left: 0, 
- right: 0, 
+ right: 0,
+ width:374,
+ height:204,
  top: 0, 
  bottom: 0    
 }
@@ -33,7 +37,9 @@ var img3 = {
  x: 600, 
  y: 50, 
  left: 0, 
- right: 0, 
+ right: 0,
+ width:500,
+ height:261,
  top: 0, 
  bottom: 0    
 }
@@ -43,7 +49,9 @@ var img4 = {
  x: 600, 
  y: 350, 
  left: 0, 
- right: 0, 
+ right: 0,
+ width:500,
+ height:345,
  top: 0, 
  bottom: 0    
 }
@@ -95,23 +103,23 @@ function draw(){
 function mousePressed(){
     img1.top = img1.y; 
     img1.left = img1.x; 
-    img1.right = img1.size + img1.x; 
-    img1.bottom = img1.size + img1.y; 
+    img1.right = img1.width + img1.height + img1.x; 
+    img1.bottom = img1.width + img1.height + img1.y; 
     
     img2.top = img2.y; 
     img2.left = img2.x; 
-    img2.right = img2.size + img2.x; 
-    img2.bottom = img2.size + img2.y;
+    img2.right = img2.width + img2.height + img2.x; 
+    img2.bottom = img2.width + img2.height + img2.y;
     
     img3.top = img3.y; 
     img3.left = img3.x; 
-    img3.right = img3.size + img3.x; 
-    img3.bottom = img3.size + img3.y; 
+    img3.right = img3.width + img3.height + img3.x; 
+    img3.bottom = img3.width + img3.height + img3.y; 
     
     img4.top = img4.y; 
     img4.left = img4.x; 
-    img4.right = img4.size + img4.x; 
-    img4.bottom = img4.size + img4.y; 
+    img4.right = img4.width + img4.height + img4.x; 
+    img4.bottom = img4.width + img4.height + img4.y; 
     
     if (mouseX > img1.left && mouseX < img1.right && mouseY > img1.top && mouseY < img1.bottom){
         
