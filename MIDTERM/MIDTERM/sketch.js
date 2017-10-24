@@ -95,6 +95,8 @@ function draw(){
     image(img3.loc, img3.x, img3.y);
     image(img4.loc, img4.x ,img4.y);
  
+ fill(30,30,30);
+ 
     rect(img1.x,img1.y,img1.width,img1.height); 
     rect(img2.x,img2.y,img2.width,img2.height);
     rect(img3.x,img3.y,img3.width,img3.height);
