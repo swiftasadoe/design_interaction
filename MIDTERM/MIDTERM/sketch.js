@@ -94,6 +94,11 @@ function draw(){
     image(img2.loc, img2.x, img2.y);
     image(img3.loc, img3.x, img3.y);
     image(img4.loc, img4.x ,img4.y);
+ 
+    rect(img1.x,img1.y,img1.width,img1.height); 
+    rect(img2.x,img2.y,img2.width,img2.height);
+    rect(img3.x,img3.y,img3.width,img3.height);
+    rect(img4.x,img4.y,img4.width,img4.height);
    
     textSize(70);
     fill(255,204,0);
