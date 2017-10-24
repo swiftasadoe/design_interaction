@@ -95,23 +95,23 @@ function draw(){
 function mousePressed(){
     img1.top = img1.y; 
     img1.left = img1.x; 
-    img1.right = img1.size + img1.x; 
-    img1.bottom = img1.size + img1.y; 
+    img1.right = img1.width + img1.height + img1.x; 
+    img1.bottom = img1.width + img1.height + img1.y; 
     
     img2.top = img2.y; 
     img2.left = img2.x; 
-    img2.right = img2.size + img2.x; 
-    img2.bottom = img2.size + img2.y;
+    img2.right = img2.width + img2.height + img2.x; 
+    img2.bottom = img2.width + img2.height + img2.y;
     
     img3.top = img3.y; 
     img3.left = img3.x; 
-    img3.right = img3.size + img3.x; 
-    img3.bottom = img3.size + img3.y; 
+    img3.right = img3.width + img3.height + img3.x; 
+    img3.bottom = img3.width + img3.height + img3.y; 
     
     img4.top = img4.y; 
     img4.left = img4.x; 
-    img4.right = img4.size + img4.x; 
-    img4.bottom = img4.size + img4.y; 
+    img4.right = img4.width + img4.height + img4.x; 
+    img4.bottom = img4.width + img4.height + img4.y; 
     
     if(mouseX > img1.left && mouseX < img1.right && mouseY > img1.top && mouseY < img1.bottom){
         moo.play();
