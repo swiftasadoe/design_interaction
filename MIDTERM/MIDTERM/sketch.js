@@ -7,6 +7,7 @@ var moo;
 var quack;
 var elephunk; 
 var quicksand;
+var test= 20;
 
 
 var img1 = {
@@ -78,28 +79,29 @@ function preload(){
 function setup(){
    createCanvas(windowWidth,windowHeight);
     textFont(quicksand);
-    //img1.loc = loadGif("reference/cow.gif");
-    //img2.loc = loadGif("reference/duck.gif");
-    //img3.loc = loadGif("reference/elephant.gif");
-    //img4.loc = loadGif("reference/lion.gif");
+    img1.loc = loadGif("reference/cow.gif");
+    img2.loc = loadGif("reference/duck.gif");
+    img3.loc = loadGif("reference/elephant.gif");
+    img4.loc = loadGif("reference/lion.gif");
     
 
 }
 
 function draw(){
     background(102,153,0);
+//    background(test,30,100);
     
-    //image(img1.loc, img1.x, img1.y);
-    //image(img2.loc, img2.x, img2.y);
-    //image(img3.loc, img3.x, img3.y);
-    //image(img4.loc, img4.x ,img4.y);
+    image(img1.loc, img1.x, img1.y);
+    image(img2.loc, img2.x, img2.y);
+    image(img3.loc, img3.x, img3.y);
+    image(img4.loc, img4.x ,img4.y);
  
- fill(30,30,30);
- 
-    rect(img1.x,img1.y,img1.width,img1.height); 
-    rect(img2.x,img2.y,img2.width,img2.height);
-    rect(img3.x,img3.y,img3.width,img3.height);
-    rect(img4.x,img4.y,img4.width,img4.height);
+// fill(30,30,30);
+// 
+//    rect(img1.x,img1.y,img1.width,img1.height); 
+//    rect(img2.x,img2.y,img2.width,img2.height);
+//    rect(img3.x,img3.y,img3.width,img3.height);
+//    rect(img4.x,img4.y,img4.width,img4.height);
    
     textSize(70);
     fill(255,204,0);
@@ -131,20 +133,24 @@ function mousePressed(){
     
     if(mouseX > img1.left && mouseX < img1.right && mouseY > img1.top && mouseY < img1.bottom){
         moo.play();
+//        test= 255;
     }
         
       
     if(mouseX > img2.left && mouseX < img2.right && mouseY > img2.top && mouseY < img2.bottom){
         quack.play();
+//        test = 70;
     }
         
         
     if(mouseX > img3.left && mouseX < img3.right && mouseY > img3.top && mouseY < img3.bottom){
        elephunk.play();
+//        test= 105;
     }
     
     if(mouseX > img4.left && mouseX < img4.right && mouseY > img4.top && mouseY < img4.bottom){
         roar.play();
+        test=200;
     }
     
 }
