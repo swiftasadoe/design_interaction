@@ -46,7 +46,7 @@ if(state == 1){
 }
 //    
 function mousePressed(){
-    if(state < 3){
+    if(state < 5){
     state = state +1;
     }else{
     state = 1;            
