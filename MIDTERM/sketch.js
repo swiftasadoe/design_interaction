@@ -7,6 +7,8 @@ var moo;
 var quack;
 var elephunk; 
 var quicksand;
+var test= 20;
+
 
 var img1 = {
  loc: 0,
@@ -75,7 +77,7 @@ function preload(){
 }
 
 function setup(){
-    createCanvas(windowWidth,windowHeight);
+   createCanvas(windowWidth,windowHeight);
     textFont(quicksand);
     img1.loc = loadGif("reference/cow.gif");
     img2.loc = loadGif("reference/duck.gif");
@@ -87,12 +89,14 @@ function setup(){
 
 function draw(){
     background(102,153,0);
+
     
-    image(img1.loc, 50,50);
-    image(img2.loc, 50,570);
-    image(img3.loc, 600,50);
-    image(img4.loc, 600,350);
-   
+    image(img1.loc, img1.x, img1.y);
+    image(img2.loc, img2.x, img2.y);
+    image(img3.loc, img3.x, img3.y);
+    image(img4.loc, img4.x ,img4.y);
+ 
+
     textSize(70);
     fill(255,204,0);
     text("Welcome To The Petting Zoo. Dare To Pet The Animals?", 980, 50,400, 800);
@@ -103,47 +107,44 @@ function draw(){
 function mousePressed(){
     img1.top = img1.y; 
     img1.left = img1.x; 
-    img1.right = img1.width + img1.height + img1.x; 
-    img1.bottom = img1.width + img1.height + img1.y; 
+    img1.right = img1.width + img1.x; 
+    img1.bottom = img1.height + img1.y; 
     
     img2.top = img2.y; 
     img2.left = img2.x; 
-    img2.right = img2.width + img2.height + img2.x; 
-    img2.bottom = img2.width + img2.height + img2.y;
+    img2.right = img2.width + img2.x; 
+    img2.bottom = img2.height + img2.y;
     
     img3.top = img3.y; 
     img3.left = img3.x; 
-    img3.right = img3.width + img3.height + img3.x; 
-    img3.bottom = img3.width + img3.height + img3.y; 
+    img3.right = img3.width + img3.x; 
+    img3.bottom = img3.height + img3.y; 
     
     img4.top = img4.y; 
     img4.left = img4.x; 
-    img4.right = img4.width + img4.height + img4.x; 
-    img4.bottom = img4.width + img4.height + img4.y; 
+    img4.right = img4.width + img4.x; 
+    img4.bottom = img4.height + img4.y; 
     
-    if (mouseX > img1.left && mouseX < img1.right && mouseY > img1.top && mouseY < img1.bottom){
-        
-    }else{
+    if(mouseX > img1.left && mouseX < img1.right && mouseY > img1.top && mouseY < img1.bottom){
         moo.play();
-     
-    
-    }if (mouseX > img2.left && mouseX < img2.right && mouseY > img2.top && mouseY < img2.bottom){
+//        test= 255;
+    }
         
-    }else{
+      
+    if(mouseX > img2.left && mouseX < img2.right && mouseY > img2.top && mouseY < img2.bottom){
         quack.play();
+//        test = 70;
+    }
+        
+        
+    if(mouseX > img3.left && mouseX < img3.right && mouseY > img3.top && mouseY < img3.bottom){
+       elephunk.play();
+//        test= 105;
+    }
     
-        
-    }if (mouseX > img3.left && mouseX < img3.right && mouseY > img3.top && mouseY < img3.bottom){
-        
-    }else{
-        elephunk.play();
-
-    
-    }if (mouseX > img4.left && mouseX < img4.right && mouseY > img4.top && mouseY < img4.bottom){
-        
-    }else{
+    if(mouseX > img4.left && mouseX < img4.right && mouseY > img4.top && mouseY < img4.bottom){
         roar.play();
-    
+        test=200;
     }
     
 }
