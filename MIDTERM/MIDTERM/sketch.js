@@ -89,20 +89,14 @@ function setup(){
 
 function draw(){
     background(102,153,0);
-//    background(test,30,100);
+
     
     image(img1.loc, img1.x, img1.y);
     image(img2.loc, img2.x, img2.y);
     image(img3.loc, img3.x, img3.y);
     image(img4.loc, img4.x ,img4.y);
  
-// fill(30,30,30);
-// 
-//    rect(img1.x,img1.y,img1.width,img1.height); 
-//    rect(img2.x,img2.y,img2.width,img2.height);
-//    rect(img3.x,img3.y,img3.width,img3.height);
-//    rect(img4.x,img4.y,img4.width,img4.height);
-   
+
     textSize(70);
     fill(255,204,0);
     text("Welcome To The Petting Zoo. Dare To Pet The Animals?", 980, 50,400, 800);
